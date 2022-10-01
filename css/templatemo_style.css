@@ -384,10 +384,12 @@ a.flex-prev:hover,a.flex-next:hover {
 
 a.flex-prev {
     left: 0;
+    display: none;
 }
 
 a.flex-next {
     right: 0;
+    display: none;
 }
 
 h3.widget-title {
