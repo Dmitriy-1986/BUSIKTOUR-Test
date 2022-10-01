@@ -199,12 +199,13 @@ hr {
 
 .site-header {
     position: absolute;
-    top: 60px;
+    /*top: 60px;*/
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 99;
 }
-
+/*
 @media screen and (min-width: 240px) {
     .site-header {
         top: 0;
@@ -216,7 +217,7 @@ hr {
         top: 60px;
     }
 }
-
+*/
 .main-header {
     background: #fff;
     min-height: 100px;
