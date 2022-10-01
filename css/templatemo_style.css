@@ -219,7 +219,7 @@ hr {
 }
 */
 .main-header {
-    background: #fff;
+    /*background: #fff;*/
     min-height: 100px;
     height: 100px;
 }
@@ -239,7 +239,7 @@ hr {
     float: left;
     padding-left: 25px;
     padding-right: 25px;
-    border-left: 1px solid #eee;
+   /* border-left: 1px solid #eee;*/
 }
 
 .main-menu ul li a {
