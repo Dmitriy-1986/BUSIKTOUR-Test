@@ -61,13 +61,15 @@
         }
 		
 	/* Contact Phone*/
-	   .contact-phone {
+	    .contact-phone {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
 		text-align: right;
-		margin-top: 0;
+		margin-top: 0;                      
 	    }
 
-	    .contact-phone li {
-		display: inline-block;
+	    .contact-phone li {  
 		margin: 0 2px;
 	    }
 
@@ -77,27 +79,32 @@
 		color: #e54747;
 		text-align: center;
 		line-height: 36px;
-		/*margin-right: 10px;*/
+		margin-right: 10px;
 		transition: all 500ms;
-		font-size: 36px;
 	    }
 
 	    .contact-phone li a:hover {
 		color: white;
 		background-color: #9ed034;
 	    }
-		
-	    @media screen and (max-width: 768px) {
-                .contact-phone {
-                   text-align: center;
-                   margin-top: 30px;
-                }
+	    @media screen and (max-width: 1000px) {
+		.contact-phone {
+		    flex-direction: column;
+		}
+	    }
 
-                .contact-phone li a { 
-                   margin-right: 0px;
-                   font-size: 26px;
-                }
-            }
+	    @media screen and (max-width: 768px) {
+		.contact-phone {
+		    text-align: center;
+		    margin-top: 30px;
+		    flex-direction: column;
+		    justify-content: center;
+		}
+
+		.contact-phone li a {
+		    margin-right: 0px;
+		}
+	    }
 	   /* BTN Chat click here */
           .btn-click-here {
             position: fixed;
@@ -480,9 +487,9 @@
                     </div> <!-- /.col-md-4 -->
                     <div class="col-md-4 col-sm-4">
 			<ul class="contact-phone">                        
-                            <li><a href="tel:+380979871721">+380979871721</a></li><br>
-                            <li><a href="tel:+380957240205">+380957240205</a></li><br>
-                            <li><a href="tel:+447464632910">+447464632910</a></li><br>
+                            <li><a href="tel:+380979871721">+380979871721</a></li>
+                            <li><a href="tel:+380957240205">+380957240205</a></li>
+                            <li><a href="tel:+447464632910">+447464632910</a></li>
                         </ul>
                         <ul class="social-icons">
                             <li><a href="#" class="fa fa-facebook"></a></li>
